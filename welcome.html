@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login and Signup</title>
+    <link rel="stylesheet" href="welcome.css">
+
+    
+    
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <h1>Welcome to Our Website</h1>
+        <nav>
+            <a href="#" class="abc">Home</a>
+            <a href="#" class="abc">About</a>
+            <a href="#" class="abc">Contact</a>
+            
+        </nav>
+    </header>
+    
+ 
+
+    <div class="mbtn">
+        <h2>Employee Information</h2>
+        
+        <button id="emp-btn" class="emp-btn">Click For Employee Details</button>
+        
+    </div>
+  
+   <div>
+   
+        <div class="btn">
+            <button id="logout-btn" class="logout-btn">logout</button>
+        </div>
+    </div>
+
+    <script> 
+    
+        //  const logoutbtn = document.getElementById('logout-btn');
+
+        //  logoutbtn.addEventListener('click',logoutfunction);
+
+
+        //     function logoutfunction()
+        //     {
+        //         localStorage.removeItem('username');
+        //         window.location.href="Index.html";
+        //     }
+
+        //we can write both the ways 
+        document.getElementById('emp-btn').addEventListener('click',function()
+        {
+            window.location.href="employee_details.html"
+
+        });
+        
+        
+        document.getElementById('logout-btn').addEventListener('click',function()
+        {
+            localStorage.removeItem('username');
+            window.location.href="Index.html"
+        });
+        
+    </script>
+       
+   
+
+    
+    <!-- Footer Section -->
+    <footer class="footer">
+        <p>&copy; 2024 Our Website. All rights reserved.</p>
+        <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+    </footer>
+   
+
+</body>
+</html>

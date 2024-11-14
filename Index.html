@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta class="UTf-8">
+        <meta class="viewport"  content="width=device-width,initial-scale=1.0">
+        <title> Login and Signup</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header class="header">
+            <h1>Welcome to Our Website</h1>
+            <nav>
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+            </nav>
+        </header>
+        <div class="form-container">
+            <div class="form-section" id="login-section">
+               
+              <img src="Images/avatar (1).png" alt="avtar picture" class="avatar">
+              <h2>Login</h2>
+
+                <form id="login-form">
+                    <input type="text" id="login-username" placeholder="Enter Username" required >
+                    <input type="password" id="login-password" placeholder="Enter the Password" required>
+                    <button  type="submit">Login</button>
+
+                </form>
+
+                <p>Dont have Account ? <a href="#" id="switch-to-signup">signup</a></p>
+
+            </div>
+
+            <div class="form-section" id="signup-section">
+                <img src="Images/avatar (1).png" alt="avtar picture" class="avatar">
+                <h2>Create Account</h2>
+                <form id="signup-form">
+                    <input type="text" id="signup-username" placeholder="Enter Username" required>
+                    <input type="password" id="signup-password" placeholder="Enter the password" required>
+                    <input type="password" id="signup-confirm-password" placeholder="confirm the password" required>
+                    <button type="submit">Signup</button>
+
+                </form>
+                <p> Already have Account ? <a href="#" id="switch-to-login">Login</a></p>
+
+            </div>
+        </div>
+        <script src="javascript.js"></script>
+        <footer class="footer">
+            <p>&copy; 2024 Our Website. All rights reserved.</p>
+            <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+        </footer>
+        
+    </body>
+</html>
